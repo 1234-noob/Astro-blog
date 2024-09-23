@@ -3,11 +3,9 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import { getCollection } from "astro:content";
 import SearchForm from "../../components/SearchForm.astro";
 import type { CollectionEntry } from "astro:content";
-import Article from "../../components/article.astro";
+import Article from "../../components/Article.astro";
 import Pagination from "../../components/Pagination.astro";
 import { ARTICLES_PER_PAGE } from "../../constant";
-import type { CollectionKey } from "astro:content";
-import type { ActionAPIContext } from "astro:actions";
 
 const currentPage: number | null =
   Number(Astro.url.searchParams.get("page")) || 1;
