@@ -1,7 +1,8 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
 import SearchForm from "../components/SearchForm.astro";
 import MostRecentArticle from "../components/MostRecentArticle.astro";
-import MainLayout from "../layouts/MainLayout.astro";
+
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { HOMEPAGE_ARTICLE_LIMIT } from "../constant";
